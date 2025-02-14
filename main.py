@@ -8,7 +8,7 @@ from datetime import datetime, timezone, timedelta
 load_dotenv()
 
 TOKEN = os.getenv("DISCORD_TOKEN")
-CHANNEL_ID = int(os.getenv("CHANNEL_ID"))
+CHANNEL_ID = os.getenv("CHANNEL_ID")
 
 event_schedule = [
     "Spider Swarm", "Unnatural Outcrop", "Stryke the Wyrm",
