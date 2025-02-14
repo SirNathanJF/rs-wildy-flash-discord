@@ -10,6 +10,9 @@ load_dotenv()
 TOKEN = os.getenv("DISCORD_TOKEN")
 CHANNEL_ID = os.getenv("CHANNEL_ID")
 
+print(f"Token: {TOKEN}")
+print(f"Channel: {CHANNEL_ID}")
+
 event_schedule = [
     "Spider Swarm", "Unnatural Outcrop", "Stryke the Wyrm",
     "Demon Stragglers", "Butterfly Swarm", "King Black Dragon Rampage",
@@ -44,8 +47,6 @@ async def send_event_alert():
 @client.event
 async def on_ready():
     load_dotenv()
-    print(f"Token: {TOKEN}")
-    print(f"Channel: {CHANNEL_ID}")
 
     print(f"Logged in as {client.user}")
 
