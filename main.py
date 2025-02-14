@@ -44,6 +44,8 @@ async def send_event_alert():
 @client.event
 async def on_ready():
     load_dotenv()
+    print(f"Token: {TOKEN}")
+    print(f"Channel: {CHANNEL_ID}")
 
     print(f"Logged in as {client.user}")
 
